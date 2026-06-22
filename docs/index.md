@@ -52,6 +52,14 @@ Last Stone Weight · Kth Largest · Top K Frequent
 
 ---
 
+## System Design
+
+30 system design questions with enriched answers — URL shortener, LRU cache, rate limiter, messaging, video streaming, payment gateways, and more.
+
+[Browse →](system-design/index.md)
+
+---
+
 ## DS and Algorithms Quest
 
 Concatenation of Array · Shuffle the Array · Max Consecutive Ones · Set Mismatch · Smaller Numbers · Disappeared Numbers
