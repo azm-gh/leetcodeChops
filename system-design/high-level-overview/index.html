@@ -3226,7 +3226,7 @@
 <p><strong>Key concepts:</strong> consistent hashing, ID generation (Snowflake), read-heavy optimization.</p>
 <p><strong>Resources:</strong>
 - <a href="https://systemdesign.one/url-shortening-system-design/">System Design — URL Shortening</a>
-- <a href="https://www.highscalability.com/tinyurl-design/">TinyURL design (High Scalability)</a></p>
+- <a href="https://highscalability.com/bitly-lessons-learned-building-a-distributed-system-that-han/">Bitly distributed architecture (High Scalability)</a></p>
 <hr />
 <h3 id="3-lru-cache">3. LRU Cache<a class="headerlink" href="#3-lru-cache" title="Permanent link">&para;</a></h3>
 <p>Hash map + doubly linked list. HashMap → O(1) lookup; linked list → O(1) eviction. On access, move node to head; on eviction, remove from tail.</p>
@@ -3253,7 +3253,7 @@
 <p>Use a message queue (RabbitMQ, Kafka) as the job buffer. Workers consume jobs. Store state in a database. Retry with exponential backoff and dead-letter queues.</p>
 <p><strong>Key concepts:</strong> cron triggers, priority queues, idempotent workers.</p>
 <p><strong>Resources:</strong>
-- <a href="https://quorablog.quora.com/Building-a-distributed-job-scheduler">Building a distributed job scheduler (Quora)</a>
+- <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html">Amazon SQS distributed job queues</a>
 - <a href="https://airflow.apache.org/docs/apache-airflow/stable/concepts/overview.html">Apache Airflow architecture</a></p>
 <hr />
 <h3 id="15-search-engine">15. Search Engine<a class="headerlink" href="#15-search-engine" title="Permanent link">&para;</a></h3>
@@ -3274,7 +3274,7 @@
 <p>Producer → queue → workers. Redis Lists for simple, RabbitMQ/Kafka for complex. Retry + dead-letter queues + visibility timeouts.</p>
 <p><strong>Key concepts:</strong> FIFO vs priority, at-least-once, backpressure.</p>
 <p><strong>Resources:</strong>
-- <a href="https://www.confluent.io/blog/apache-kafka-vs-rabbitmq/">RabbitMQ vs Kafka (Confluent)</a>
+- <a href="https://www.cloudamqp.com/blog/part1-rabbitmq-best-practice.html">RabbitMQ vs Kafka comparison</a>
 - <a href="https://docs.celeryq.dev/en/stable/getting-started/introduction.html">Celery docs</a></p>
 <hr />
 <h3 id="27-email-sending-system">27. Email Sending System<a class="headerlink" href="#27-email-sending-system" title="Permanent link">&para;</a></h3>
@@ -3282,7 +3282,7 @@
 <p><strong>Key concepts:</strong> SMTP relay, email reputation, rate limiting sends.</p>
 <p><strong>Resources:</strong>
 - <a href="https://docs.sendgrid.com/for-developers/sending-email">SendGrid sending guide</a>
-- <a href="https://workspace.google.com/learn-more/email/">Gmail email infrastructure</a></p>
+- <a href="https://sendgrid.com/blog/what-is-email-deliverability/">Email deliverability guide (SendGrid)</a></p>
 <hr />
 <h3 id="30-server-monitoring-system">30. Server Monitoring System<a class="headerlink" href="#30-server-monitoring-system" title="Permanent link">&para;</a></h3>
 <p>Collect metrics via agents (Prometheus node_exporter). Store in time-series DB (Prometheus, InfluxDB). Alert on thresholds. Visualize with Grafana.</p>
@@ -3307,14 +3307,14 @@
 <p>Blob storage (S3) + metadata database. Signed URLs for temporary access. Multi-part upload for large files.</p>
 <p><strong>Key concepts:</strong> encryption at rest, virus scanning, versioning.</p>
 <p><strong>Resources:</strong>
-- <a href="https://www.highscalability.com/dropbox-architecture/">Dropbox infrastructure</a></p>
+- <a href="https://dropbox.tech/infrastructure/inside-lan-sync">LAN sync performance (Dropbox tech)</a></p>
 <hr />
 <h2 id="real-time-communication">Real-time &amp; Communication<a class="headerlink" href="#real-time-communication" title="Permanent link">&para;</a></h2>
 <h3 id="6-real-time-messaging-whatsapp">6. Real-time Messaging (WhatsApp)<a class="headerlink" href="#6-real-time-messaging-whatsapp" title="Permanent link">&para;</a></h3>
 <p>WebSockets for persistent connections. Distributed DB (Cassandra) for messages. Pub/sub delivery. Offline buffering via message queue.</p>
 <p><strong>Key concepts:</strong> chat architecture, end-to-end encryption, read receipts.</p>
 <p><strong>Resources:</strong>
-- <a href="https://engineering.fb.com/2012/09/17/data-infrastructure/facebook-and-whatsapp/">WhatsApp architecture (Meta)</a>
+- <a href="https://engineering.fb.com/tag/whatsapp/">WhatsApp engineering posts (Meta)</a>
 - <a href="https://www.youtube.com/watch?v=UzLMh68g4yg">Building a chat system</a></p>
 <hr />
 <h3 id="17-payment-gateway">17. Payment Gateway<a class="headerlink" href="#17-payment-gateway" title="Permanent link">&para;</a></h3>
@@ -3322,14 +3322,14 @@
 <p><strong>Key concepts:</strong> idempotency, 3D Secure, fraud detection, reconciliation.</p>
 <p><strong>Resources:</strong>
 - <a href="https://stripe.com/docs/api">Stripe API design</a>
-- <a href="https://www.adyen.com/blog/payment-architecture">Building reliable payment systems (Adyen)</a></p>
+- <a href="https://stripe.com/blog/payment-api-design">Stripe's payment architecture</a></p>
 <hr />
 <h3 id="19-real-time-collaboration-google-docs">19. Real-time Collaboration (Google Docs)<a class="headerlink" href="#19-real-time-collaboration-google-docs" title="Permanent link">&para;</a></h3>
 <p>WebSockets + CRDTs or OT for conflict resolution. Event sourcing for document history.</p>
 <p><strong>Key concepts:</strong> CRDT vs OT, operational log, cursor sync.</p>
 <p><strong>Resources:</strong>
 - <a href="https://www.youtube.com/watch?v=3h1R6iE1hJs">How Google Docs works</a>
-- <a href="https://martin.kleppmann.com/papers/crdt-papoc.pdf">CRDTs (Martin Kleppmann)</a></p>
+- <a href="https://arxiv.org/abs/1909.04980">CRDTs (Martin Kleppmann — arXiv)</a></p>
 <hr />
 <h3 id="20-video-conferencing-zoom">20. Video Conferencing (Zoom)<a class="headerlink" href="#20-video-conferencing-zoom" title="Permanent link">&para;</a></h3>
 <p>WebRTC for P2P audio/video. SFU/MCU for group calls. TURN servers for NAT traversal. Adaptive bitrate.</p>
@@ -3343,7 +3343,7 @@
 <p><strong>Key concepts:</strong> audit trail, verifiability, live aggregation.</p>
 <p><strong>Resources:</strong>
 - <a href="https://www.electionguard.vote/">ElectionGuard</a>
-- <a href="https://e-estonia.com/solutions/e-governance/e-voting/">Estonia e-voting</a></p>
+- <a href="https://e-estonia.com/solutions/e-governance/">Estonia e-voting</a></p>
 <hr />
 <h2 id="media-content-delivery">Media &amp; Content Delivery<a class="headerlink" href="#media-content-delivery" title="Permanent link">&para;</a></h2>
 <h3 id="7-video-streaming-youtube">7. Video Streaming (YouTube)<a class="headerlink" href="#7-video-streaming-youtube" title="Permanent link">&para;</a></h3>
@@ -3365,7 +3365,7 @@
 <p><strong>Key concepts:</strong> lossless vs lossy, streaming compression.</p>
 <p><strong>Resources:</strong>
 - <a href="https://engineering.fb.com/2016/08/31/core-data/smaller-and-faster-data-compression-with-zstandard/">Facebook's zstd</a>
-- <a href="https://www.igvita.com/2015/08/18/brotli-compression-for-web/">Google brotli</a></p>
+- <a href="https://github.com/google/brotli">Brotli compression (GitHub)</a></p>
 <hr />
 <h2 id="social-collaboration">Social &amp; Collaboration<a class="headerlink" href="#social-collaboration" title="Permanent link">&para;</a></h2>
 <h3 id="4-social-media-platform-instagram">4. Social Media Platform (Instagram)<a class="headerlink" href="#4-social-media-platform-instagram" title="Permanent link">&para;</a></h3>
@@ -3386,7 +3386,7 @@
 <p>NoSQL for posts. Relational for relationships (follows, tags). Redis for hot content. CDN for images. Elasticsearch for search.</p>
 <p><strong>Key concepts:</strong> content caching, cursor-based pagination, full-text search.</p>
 <p><strong>Resources:</strong>
-- <a href="https://medium.engineering/">Medium engineering blog</a>
+- <a href="https://blog.medium.com/">Medium engineering archive</a>
 - <a href="https://ghost.org/docs/">Ghost architecture</a></p>
 <hr />
 <h2 id="e-commerce-transactions">E-commerce &amp; Transactions<a class="headerlink" href="#e-commerce-transactions" title="Permanent link">&para;</a></h2>
@@ -3394,7 +3394,7 @@
 <p>ACID transactions for orders. Idempotent payment integration. Inventory reservation with timeout. Message queue for fulfillment.</p>
 <p><strong>Key concepts:</strong> saga pattern, inventory locking, abandoned cart recovery.</p>
 <p><strong>Resources:</strong>
-- <a href="https://www.amazon.science/publications/amazon-checkout">Amazon checkout</a>
+- <a href="https://aws.amazon.com/builders-library/challenges-with-distributed-systems/">Challenges with distributed systems (AWS)</a>
 - <a href="https://shopify.engineering/">Shopify engineering</a></p>
 <hr />
 <h3 id="16-ticket-booking-system">16. Ticket Booking System<a class="headerlink" href="#16-ticket-booking-system" title="Permanent link">&para;</a></h3>
@@ -3424,7 +3424,7 @@
 <p><strong>Key concepts:</strong> chunking, deduplication, offline conflict resolution, ACLs.</p>
 <p><strong>Resources:</strong>
 - <a href="https://cloud.google.com/blog/products/storage-data-transfer/google-drive-infrastructure">Google Drive infrastructure</a>
-- <a href="https://dropbox.tech/infrastructure/file-synchronization">Dropbox sync</a></p>
+- <a href="https://dropbox.tech/infrastructure/streaming-file-synchronization">Streaming file sync (Dropbox tech)</a></p>
 
 
 
