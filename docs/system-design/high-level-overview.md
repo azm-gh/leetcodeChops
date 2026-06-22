@@ -14,7 +14,7 @@ Use a hash function (Base62 encoding) to generate short codes. Store mappings in
 
 **Resources:**
 - [System Design — URL Shortening](https://systemdesign.one/url-shortening-system-design/)
-- [TinyURL design (High Scalability)](https://www.highscalability.com/tinyurl-design/)
+- [Bitly distributed architecture (High Scalability)](https://highscalability.com/bitly-lessons-learned-building-a-distributed-system-that-han/)
 
 ---
 
@@ -61,7 +61,7 @@ Use a message queue (RabbitMQ, Kafka) as the job buffer. Workers consume jobs. S
 **Key concepts:** cron triggers, priority queues, idempotent workers.
 
 **Resources:**
-- [Building a distributed job scheduler (Quora)](https://quorablog.quora.com/Building-a-distributed-job-scheduler)
+- [Amazon SQS distributed job queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
 - [Apache Airflow architecture](https://airflow.apache.org/docs/apache-airflow/stable/concepts/overview.html)
 
 ---
@@ -97,7 +97,7 @@ Producer → queue → workers. Redis Lists for simple, RabbitMQ/Kafka for compl
 **Key concepts:** FIFO vs priority, at-least-once, backpressure.
 
 **Resources:**
-- [RabbitMQ vs Kafka (Confluent)](https://www.confluent.io/blog/apache-kafka-vs-rabbitmq/)
+- [RabbitMQ vs Kafka comparison](https://www.cloudamqp.com/blog/part1-rabbitmq-best-practice.html)
 - [Celery docs](https://docs.celeryq.dev/en/stable/getting-started/introduction.html)
 
 ---
@@ -110,7 +110,7 @@ Use SendGrid, SES, or Mailgun for deliverability and SPF/DKIM/DMARC. Queue email
 
 **Resources:**
 - [SendGrid sending guide](https://docs.sendgrid.com/for-developers/sending-email)
-- [Gmail email infrastructure](https://workspace.google.com/learn-more/email/)
+- [Email deliverability guide (SendGrid)](https://sendgrid.com/blog/what-is-email-deliverability/)
 
 ---
 
@@ -155,7 +155,7 @@ Blob storage (S3) + metadata database. Signed URLs for temporary access. Multi-p
 **Key concepts:** encryption at rest, virus scanning, versioning.
 
 **Resources:**
-- [Dropbox infrastructure](https://www.highscalability.com/dropbox-architecture/)
+- [LAN sync performance (Dropbox tech)](https://dropbox.tech/infrastructure/inside-lan-sync)
 
 ---
 
@@ -168,7 +168,7 @@ WebSockets for persistent connections. Distributed DB (Cassandra) for messages. 
 **Key concepts:** chat architecture, end-to-end encryption, read receipts.
 
 **Resources:**
-- [WhatsApp architecture (Meta)](https://engineering.fb.com/2012/09/17/data-infrastructure/facebook-and-whatsapp/)
+- [WhatsApp engineering posts (Meta)](https://engineering.fb.com/tag/whatsapp/)
 - [Building a chat system](https://www.youtube.com/watch?v=UzLMh68g4yg)
 
 ---
@@ -181,7 +181,7 @@ Integrate with Stripe/PayPal. Use idempotency keys. Encrypt sensitive data (PCI-
 
 **Resources:**
 - [Stripe API design](https://stripe.com/docs/api)
-- [Building reliable payment systems (Adyen)](https://www.adyen.com/blog/payment-architecture)
+- [Stripe's payment architecture](https://stripe.com/blog/payment-api-design)
 
 ---
 
@@ -193,7 +193,7 @@ WebSockets + CRDTs or OT for conflict resolution. Event sourcing for document hi
 
 **Resources:**
 - [How Google Docs works](https://www.youtube.com/watch?v=3h1R6iE1hJs)
-- [CRDTs (Martin Kleppmann)](https://martin.kleppmann.com/papers/crdt-papoc.pdf)
+- [CRDTs (Martin Kleppmann — arXiv)](https://arxiv.org/abs/1909.04980)
 
 ---
 
@@ -217,7 +217,7 @@ Relational DB for votes. Unique constraint (user + election) for dedup. Separate
 
 **Resources:**
 - [ElectionGuard](https://www.electionguard.vote/)
-- [Estonia e-voting](https://e-estonia.com/solutions/e-governance/e-voting/)
+- [Estonia e-voting](https://e-estonia.com/solutions/e-governance/)
 
 ---
 
@@ -255,7 +255,7 @@ Upload → background job → compression (gzip, zstd) → store result. Task qu
 
 **Resources:**
 - [Facebook's zstd](https://engineering.fb.com/2016/08/31/core-data/smaller-and-faster-data-compression-with-zstandard/)
-- [Google brotli](https://www.igvita.com/2015/08/18/brotli-compression-for-web/)
+- [Brotli compression (GitHub)](https://github.com/google/brotli)
 
 ---
 
@@ -292,7 +292,7 @@ NoSQL for posts. Relational for relationships (follows, tags). Redis for hot con
 **Key concepts:** content caching, cursor-based pagination, full-text search.
 
 **Resources:**
-- [Medium engineering blog](https://medium.engineering/)
+- [Medium engineering archive](https://blog.medium.com/)
 - [Ghost architecture](https://ghost.org/docs/)
 
 ---
@@ -306,7 +306,7 @@ ACID transactions for orders. Idempotent payment integration. Inventory reservat
 **Key concepts:** saga pattern, inventory locking, abandoned cart recovery.
 
 **Resources:**
-- [Amazon checkout](https://www.amazon.science/publications/amazon-checkout)
+- [Challenges with distributed systems (AWS)](https://aws.amazon.com/builders-library/challenges-with-distributed-systems/)
 - [Shopify engineering](https://shopify.engineering/)
 
 ---
@@ -357,4 +357,4 @@ Blob storage partitioned by user. Metadata DB. Delta sync (upload changed chunks
 
 **Resources:**
 - [Google Drive infrastructure](https://cloud.google.com/blog/products/storage-data-transfer/google-drive-infrastructure)
-- [Dropbox sync](https://dropbox.tech/infrastructure/file-synchronization)
+- [Streaming file sync (Dropbox tech)](https://dropbox.tech/infrastructure/streaming-file-synchronization)
