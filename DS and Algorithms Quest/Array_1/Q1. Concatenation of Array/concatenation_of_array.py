@@ -4,7 +4,9 @@ https://leetcode.com/problems/concatenation-of-array/
 """
 # Intuition: The problem asks to create an array where ans[i] == nums[i]
 # and ans[i + n] == nums[i] for i in [0, n). This is simply the array
-# repeated twice. The naive approach appends each element one by one;
+# repeated twice. No specific pattern from the 8 — this is a warm-up
+# problem focused on basic array allocation and indexing.
+# The naive approach appends each element one by one;
 # the optimized approach uses Python's list multiplication or extend.
 
 from typing import List

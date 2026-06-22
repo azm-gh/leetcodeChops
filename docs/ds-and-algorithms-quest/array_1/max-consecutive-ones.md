@@ -2,6 +2,10 @@
 
 **LeetCode:** [485](https://leetcode.com/problems/max-consecutive-ones/)
 
+## Pattern
+
+**Sliding window (variable-size)** — The window represents the current run of consecutive 1s. When we hit a 0, the window resets (closes). When we see a 1, the window expands. We track the maximum window length seen. This is a simpler form of the sliding window where the condition for resetting is hitting a 0.
+
 ## Intuition
 
 Scan linearly: when we see a 1, increment a running count and update the max; when we see a 0, reset the count. The naive approach uses nested loops to find each run; the optimized single-pass approach is both simpler and faster.

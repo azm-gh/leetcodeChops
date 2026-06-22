@@ -4,8 +4,9 @@ https://leetcode.com/problems/shuffle-the-array/
 """
 # Intuition: The array has 2n elements: [x1, x2, ..., xn, y1, y2, ..., yn].
 # The result should be [x1, y1, x2, y2, ..., xn, yn]. We interleave the
-# first n elements with the last n elements. The naive approach uses two
-# pointers; the optimized builds the result cleanly in one pass.
+# first n elements with the last n elements.
+# Pattern: Two-pointer approach — we use two pointers, one at i (x-half)
+# and one at i + n (y-half), advancing together to interleave the sequences.
 
 from typing import List
 

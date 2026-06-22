@@ -2,6 +2,10 @@
 
 **LeetCode:** [645](https://leetcode.com/problems/set-mismatch/)
 
+## Pattern
+
+**Hashmaps / Hash sets** — The naive solution uses a frequency array (essentially a hashmap with integer keys) to count occurrences. The optimized solution uses the math of set sums, still relying on set reasoning. This maps to "counting frequencies" and "have I seen this before?" from the hashmap pattern.
+
 ## Intuition
 
 The array contains numbers from 1 to n, but one is duplicated and one is missing. The naive approach counts frequencies. The optimized approach uses the math property: the difference between actual sum and set sum gives the duplicate; the difference between expected sum (1..n) and set sum gives the missing number.

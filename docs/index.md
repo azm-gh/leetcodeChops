@@ -2,16 +2,6 @@
 
 Solutions to LeetCode problems organized by **algorithmic pattern**. Each pattern folder explains **why** the pattern fits and provides **naive** + **optimized** solutions for every problem.
 
----
-
-## DS and Algorithms Quest
-
-Concatenation of Array · Shuffle the Array · Max Consecutive Ones · Set Mismatch · Smaller Numbers · Disappeared Numbers
-
-[Browse →](ds-and-algorithms-quest/index.md)
-
----
-
 ## 1. Two-pointer Approach
 
 Move Zeroes · Two Sum II · 3Sum · Container With Most Water
@@ -59,3 +49,11 @@ Climbing Stairs · Coin Change · LCS · House Robber
 Last Stone Weight · Kth Largest · Top K Frequent
 
 [Browse →](heap-priority-queue/index.md)
+
+---
+
+## DS and Algorithms Quest
+
+Concatenation of Array · Shuffle the Array · Max Consecutive Ones · Set Mismatch · Smaller Numbers · Disappeared Numbers
+
+[Browse →](ds-and-algorithms-quest/index.md)

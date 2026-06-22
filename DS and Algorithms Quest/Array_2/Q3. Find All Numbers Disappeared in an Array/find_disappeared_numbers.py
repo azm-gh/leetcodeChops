@@ -7,6 +7,9 @@ https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 # approach marks visited numbers in-place by negating the value at the
 # corresponding index — numbers at unmarked indices are the missing ones.
 # This achieves O(1) extra space.
+# Pattern: Hashmaps / hash sets — the naive approach directly uses a set
+# for "have I seen this before?" The optimized approach implements the same
+# concept in-place using the array as a makeshift hash set.
 
 from typing import List
 

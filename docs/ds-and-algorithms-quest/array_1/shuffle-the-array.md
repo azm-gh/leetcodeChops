@@ -2,6 +2,10 @@
 
 **LeetCode:** [1470](https://leetcode.com/problems/shuffle-the-array/)
 
+## Pattern
+
+**Two-pointer approach** — We effectively use two pointers: one at index `i` tracking the x-half and one at `i + n` tracking the y-half. The pointers advance together, interleaving the elements. This maps directly to the two-pointer pattern under "pairing or interleaving two sequences."
+
 ## Intuition
 
 The array has 2n elements where the first n are x's and the last n are y's. The result interleaves them: x1, y1, x2, y2, ..., xn, yn. Both solutions are O(n); the optimized version pre-allocates the result array.

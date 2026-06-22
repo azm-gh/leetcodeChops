@@ -6,6 +6,8 @@ https://leetcode.com/problems/set-mismatch/
 # and one is missing. The naive approach uses a frequency count. The
 # optimized approach uses the math property: sum(nums) - sum(set(nums))
 # gives the duplicate, and sum(1..n) - sum(set(nums)) gives the missing.
+# Pattern: Hashmaps / hash sets — frequency counting matches the "counting
+# frequencies" signal from the hashmap pattern.
 
 from typing import List
 

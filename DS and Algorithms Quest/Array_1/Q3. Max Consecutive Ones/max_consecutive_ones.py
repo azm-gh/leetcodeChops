@@ -3,8 +3,10 @@ LeetCode 485: Max Consecutive Ones
 https://leetcode.com/problems/max-consecutive-ones/
 """
 # Intuition: Scan the array tracking the current run of 1s. When we hit a 0,
-# the run resets. Keep a max of all observed runs. The naive approach uses
-# nested loops to find each run; the optimized does it in a single pass.
+# the run resets. Keep a max of all observed runs.
+# Pattern: Sliding window (variable-size) — the window is the current run
+# of consecutive 1s. It expands on 1s and resets on 0s. We track the max
+# window length seen.
 
 from typing import List
 

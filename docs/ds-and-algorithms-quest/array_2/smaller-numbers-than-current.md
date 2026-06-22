@@ -2,6 +2,10 @@
 
 **LeetCode:** [1365](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
 
+## Pattern
+
+**Prefix sum (counting sort variant)** — Since values are bounded (0..100), we build a frequency array and compute prefix sums. The prefix sum at each value tells us how many elements are ≤ that value. Subtracting the current element's own count gives "smaller than." This is the prefix sum pattern applied to a fixed-range frequency domain.
+
 ## Intuition
 
 For each number we need the count of smaller numbers in the array. The naive approach checks every pair in O(n²). Since values are bounded (0..100), the optimized approach uses counting sort: build a frequency array, compute prefix sums to know how many numbers are smaller than each value, then look up the result for each input in O(1).

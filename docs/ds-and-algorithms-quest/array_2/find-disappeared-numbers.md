@@ -2,6 +2,10 @@
 
 **LeetCode:** [448](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
 
+## Pattern
+
+**Hashmaps / Hash sets** — The naive solution explicitly uses a set to track present numbers. The optimized solution uses the array itself as a hash set: by negating `nums[value - 1]`, we mark that value as "seen" without allocating extra space. This maps to the "have I seen this before?" check from the hashmap pattern, but implemented in-place.
+
 ## Intuition
 
 Values are in [1, n] but some are missing. The naive approach uses a hash set of present values. The optimized approach marks visited indices in-place by negating the value at the corresponding index. After processing, indices with positive values are the missing numbers — O(1) extra space.
