@@ -1,0 +1,34 @@
+# Top K Frequent Elements
+
+**LeetCode:** [https://leetcode.com/problems/top-k-frequent-elements/](https://leetcode.com/problems/top-k-frequent-elements/)
+
+## Intuition
+
+Intuition: Count frequencies with a hashmap, then use a min-heap of size k
+to keep the k most frequent elements. The heap is ordered by frequency, so
+the least frequent among the top k is evicted when a more frequent element
+arrives. O(n log k) time.
+
+## Solutions
+
+### `top_k_frequent_sort_naive` — Naive
+
+```python
+def top_k_frequent_sort_naive(nums: List[int], k: int) -> List[int]:
+    freq = Counter(nums)
+    sorted_items = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+    return [item[0] for item in sorted_items[:k]]
+```
+
+### `top_k_frequent_heap_optimized` — Optimized
+
+```python
+def top_k_frequent_heap_optimized(nums: List[int], k: int) -> List[int]:
+    freq = Counter(nums)
+    heap = []
+    for num, count in freq.items():
+        heapq.heappush(heap, (count, num))
+        if len(heap) > k:
+            heapq.heappop(heap)
+    return [num for _, num in heap]
+```
