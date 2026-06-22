@@ -4,6 +4,14 @@ Solutions to LeetCode problems organized by **algorithmic pattern**. Each patter
 
 ---
 
+## DS and Algorithms Quest
+
+Concatenation of Array · Shuffle the Array · Max Consecutive Ones · Set Mismatch · Smaller Numbers · Disappeared Numbers
+
+[Browse →](ds-and-algorithms-quest/index.md)
+
+---
+
 ## 1. Two-pointer Approach
 
 Move Zeroes · Two Sum II · 3Sum · Container With Most Water
