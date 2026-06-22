@@ -11,4 +11,4 @@ Each entry includes:
 - Key concepts to discuss in an interview
 - Links to engineering blogs, papers, and official documentation
 
-[Browse →](High%20domain%20overview/system_design_overview.md)
+[Browse →](high-level-overview.md)
