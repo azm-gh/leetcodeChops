@@ -75,6 +75,8 @@ nav:
   - System Design:
     - Overview: system-design/index.md
     - High Level Overview: system-design/high-level-overview.md
+  - Design Patterns:
+    - Overview: design-patterns/index.md
   - DS and Algorithms Quest:
     - Overview: ds-and-algorithms-quest/index.md
     - Array 1:
