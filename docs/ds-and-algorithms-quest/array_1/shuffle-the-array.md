@@ -2,6 +2,8 @@
 
 **LeetCode:** [1470](https://leetcode.com/problems/shuffle-the-array/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/shuffle-the-array](https://algomaster.io/animations/dsa/shuffle-the-array)
+
 ## Pattern
 
 **Two-pointer approach** — We effectively use two pointers: one at index `i` tracking the x-half and one at `i + n` tracking the y-half. The pointers advance together, interleaving the elements. This maps directly to the two-pointer pattern under "pairing or interleaving two sequences."

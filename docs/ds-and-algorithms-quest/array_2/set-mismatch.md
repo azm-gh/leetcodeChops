@@ -2,6 +2,8 @@
 
 **LeetCode:** [645](https://leetcode.com/problems/set-mismatch/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/set-mismatch](https://algomaster.io/animations/dsa/set-mismatch)
+
 ## Pattern
 
 **Hashmaps / Hash sets** — The naive solution uses a frequency array (essentially a hashmap with integer keys) to count occurrences. The optimized solution uses the math of set sums, still relying on set reasoning. This maps to "counting frequencies" and "have I seen this before?" from the hashmap pattern.

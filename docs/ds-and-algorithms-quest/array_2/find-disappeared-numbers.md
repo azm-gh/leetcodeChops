@@ -2,6 +2,8 @@
 
 **LeetCode:** [448](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/find-all-numbers-disappeared-in-an-array](https://algomaster.io/animations/dsa/find-all-numbers-disappeared-in-an-array)
+
 ## Pattern
 
 **Hashmaps / Hash sets** — The naive solution explicitly uses a set to track present numbers. The optimized solution uses the array itself as a hash set: by negating `nums[value - 1]`, we mark that value as "seen" without allocating extra space. This maps to the "have I seen this before?" check from the hashmap pattern, but implemented in-place.

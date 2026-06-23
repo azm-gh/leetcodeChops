@@ -2,6 +2,8 @@
 
 **LeetCode:** [485](https://leetcode.com/problems/max-consecutive-ones/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/max-consecutive-ones](https://algomaster.io/animations/dsa/max-consecutive-ones)
+
 ## Pattern
 
 **Sliding window (variable-size)** — The window represents the current run of consecutive 1s. When we hit a 0, the window resets (closes). When we see a 1, the window expands. We track the maximum window length seen. This is a simpler form of the sliding window where the condition for resetting is hitting a 0.
