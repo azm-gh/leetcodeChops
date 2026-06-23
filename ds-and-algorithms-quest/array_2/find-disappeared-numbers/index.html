@@ -10,31 +10,29 @@
       
       
       
-        <link rel="canonical" href="https://azm-gh.github.io/leetcodeChops/sliding-window-pattern/longest-repeating-character-replacement/">
+        <link rel="canonical" href="https://azm-gh.github.io/leetcodeChops/ds-and-algorithms-quest/array_2/find-disappeared-numbers/">
       
       
-        <link rel="prev" href="../longest-substring-without-repeating-characters/">
+        <link rel="prev" href="../smaller-numbers-than-current/">
       
-      
-        <link rel="next" href="../minimum-window-substring/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Longest Repeating Char Replacement - LeetCode Chops</title>
+        <title>Find Disappeared Numbers - LeetCode Chops</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#longest-repeating-character-replacement" class="md-skip">
+        <a href="#q3-find-all-numbers-disappeared-in-an-array" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LeetCode Chops" class="md-header__button md-logo" aria-label="LeetCode Chops" data-md-component="logo">
+    <a href="../../.." title="LeetCode Chops" class="md-header__button md-logo" aria-label="LeetCode Chops" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Longest Repeating Char Replacement
+              Find Disappeared Numbers
             
           </span>
         </div>
@@ -202,7 +200,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LeetCode Chops" class="md-nav__button md-logo" aria-label="LeetCode Chops" data-md-component="logo">
+    <a href="../../.." title="LeetCode Chops" class="md-nav__button md-logo" aria-label="LeetCode Chops" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -232,7 +230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -306,7 +304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../two-pointer-approach/" class="md-nav__link">
+      <a href="../../../two-pointer-approach/" class="md-nav__link">
         
   
   
@@ -334,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../two-pointer-approach/move-zeroes/" class="md-nav__link">
+      <a href="../../../two-pointer-approach/move-zeroes/" class="md-nav__link">
         
   
   
@@ -362,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../two-pointer-approach/two-sum-ii-input-array-is-sorted/" class="md-nav__link">
+      <a href="../../../two-pointer-approach/two-sum-ii-input-array-is-sorted/" class="md-nav__link">
         
   
   
@@ -390,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../two-pointer-approach/3sum/" class="md-nav__link">
+      <a href="../../../two-pointer-approach/3sum/" class="md-nav__link">
         
   
   
@@ -418,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../two-pointer-approach/container-with-most-water/" class="md-nav__link">
+      <a href="../../../two-pointer-approach/container-with-most-water/" class="md-nav__link">
         
   
   
@@ -450,20 +448,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -484,7 +480,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -502,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../sliding-window-pattern/" class="md-nav__link">
         
   
   
@@ -530,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maximum-average-subarray-i/" class="md-nav__link">
+      <a href="../../../sliding-window-pattern/maximum-average-subarray-i/" class="md-nav__link">
         
   
   
@@ -558,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../longest-substring-without-repeating-characters/" class="md-nav__link">
+      <a href="../../../sliding-window-pattern/longest-substring-without-repeating-characters/" class="md-nav__link">
         
   
   
@@ -583,37 +579,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Longest Repeating Char Replacement
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../sliding-window-pattern/longest-repeating-character-replacement/" class="md-nav__link">
         
   
   
@@ -629,76 +598,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#intuition" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Intuition
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solutions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Solutions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#character_replacement_naive-naive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        character_replacement_naive — Naive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#character_replacement_optimized-optimized" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        character_replacement_optimized — Optimized
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -711,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../minimum-window-substring/" class="md-nav__link">
+      <a href="../../../sliding-window-pattern/minimum-window-substring/" class="md-nav__link">
         
   
   
@@ -793,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modified-binary-search-pattern/" class="md-nav__link">
+      <a href="../../../modified-binary-search-pattern/" class="md-nav__link">
         
   
   
@@ -821,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modified-binary-search-pattern/search-in-rotated-sorted-array/" class="md-nav__link">
+      <a href="../../../modified-binary-search-pattern/search-in-rotated-sorted-array/" class="md-nav__link">
         
   
   
@@ -849,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modified-binary-search-pattern/koko-eating-bananas/" class="md-nav__link">
+      <a href="../../../modified-binary-search-pattern/koko-eating-bananas/" class="md-nav__link">
         
   
   
@@ -877,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modified-binary-search-pattern/search-a-2d-matrix/" class="md-nav__link">
+      <a href="../../../modified-binary-search-pattern/search-a-2d-matrix/" class="md-nav__link">
         
   
   
@@ -905,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modified-binary-search-pattern/capacity-to-ship-packages-within-d-days/" class="md-nav__link">
+      <a href="../../../modified-binary-search-pattern/capacity-to-ship-packages-within-d-days/" class="md-nav__link">
         
   
   
@@ -987,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hashmaps-and-hash-sets/" class="md-nav__link">
+      <a href="../../../hashmaps-and-hash-sets/" class="md-nav__link">
         
   
   
@@ -1015,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hashmaps-and-hash-sets/find-the-duplicate-number/" class="md-nav__link">
+      <a href="../../../hashmaps-and-hash-sets/find-the-duplicate-number/" class="md-nav__link">
         
   
   
@@ -1043,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hashmaps-and-hash-sets/two-sum/" class="md-nav__link">
+      <a href="../../../hashmaps-and-hash-sets/two-sum/" class="md-nav__link">
         
   
   
@@ -1071,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hashmaps-and-hash-sets/majority-element/" class="md-nav__link">
+      <a href="../../../hashmaps-and-hash-sets/majority-element/" class="md-nav__link">
         
   
   
@@ -1099,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hashmaps-and-hash-sets/group-anagrams/" class="md-nav__link">
+      <a href="../../../hashmaps-and-hash-sets/group-anagrams/" class="md-nav__link">
         
   
   
@@ -1127,7 +1026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hashmaps-and-hash-sets/longest-consecutive-sequence/" class="md-nav__link">
+      <a href="../../../hashmaps-and-hash-sets/longest-consecutive-sequence/" class="md-nav__link">
         
   
   
@@ -1209,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../monotonic-stack-prefix-sum-pattern/" class="md-nav__link">
+      <a href="../../../monotonic-stack-prefix-sum-pattern/" class="md-nav__link">
         
   
   
@@ -1237,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../monotonic-stack-prefix-sum-pattern/find-pivot-index/" class="md-nav__link">
+      <a href="../../../monotonic-stack-prefix-sum-pattern/find-pivot-index/" class="md-nav__link">
         
   
   
@@ -1265,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../monotonic-stack-prefix-sum-pattern/subarray-sum-equals-k/" class="md-nav__link">
+      <a href="../../../monotonic-stack-prefix-sum-pattern/subarray-sum-equals-k/" class="md-nav__link">
         
   
   
@@ -1293,7 +1192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../monotonic-stack-prefix-sum-pattern/range-sum-query/" class="md-nav__link">
+      <a href="../../../monotonic-stack-prefix-sum-pattern/range-sum-query/" class="md-nav__link">
         
   
   
@@ -1375,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bfs-and-dfs/" class="md-nav__link">
+      <a href="../../../bfs-and-dfs/" class="md-nav__link">
         
   
   
@@ -1403,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bfs-and-dfs/maximum-depth-of-binary-tree/" class="md-nav__link">
+      <a href="../../../bfs-and-dfs/maximum-depth-of-binary-tree/" class="md-nav__link">
         
   
   
@@ -1431,7 +1330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bfs-and-dfs/number-of-islands/" class="md-nav__link">
+      <a href="../../../bfs-and-dfs/number-of-islands/" class="md-nav__link">
         
   
   
@@ -1459,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bfs-and-dfs/course-schedule/" class="md-nav__link">
+      <a href="../../../bfs-and-dfs/course-schedule/" class="md-nav__link">
         
   
   
@@ -1487,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bfs-and-dfs/word-ladder/" class="md-nav__link">
+      <a href="../../../bfs-and-dfs/word-ladder/" class="md-nav__link">
         
   
   
@@ -1569,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../memoization-dynamic-programming/" class="md-nav__link">
+      <a href="../../../memoization-dynamic-programming/" class="md-nav__link">
         
   
   
@@ -1597,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../memoization-dynamic-programming/climbing-stairs/" class="md-nav__link">
+      <a href="../../../memoization-dynamic-programming/climbing-stairs/" class="md-nav__link">
         
   
   
@@ -1625,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../memoization-dynamic-programming/coin-change/" class="md-nav__link">
+      <a href="../../../memoization-dynamic-programming/coin-change/" class="md-nav__link">
         
   
   
@@ -1653,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../memoization-dynamic-programming/longest-common-subsequence/" class="md-nav__link">
+      <a href="../../../memoization-dynamic-programming/longest-common-subsequence/" class="md-nav__link">
         
   
   
@@ -1681,7 +1580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../memoization-dynamic-programming/house-robber/" class="md-nav__link">
+      <a href="../../../memoization-dynamic-programming/house-robber/" class="md-nav__link">
         
   
   
@@ -1763,7 +1662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../heap-priority-queue/" class="md-nav__link">
+      <a href="../../../heap-priority-queue/" class="md-nav__link">
         
   
   
@@ -1791,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../heap-priority-queue/last-stone-weight/" class="md-nav__link">
+      <a href="../../../heap-priority-queue/last-stone-weight/" class="md-nav__link">
         
   
   
@@ -1819,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../heap-priority-queue/kth-largest-element-in-an-array/" class="md-nav__link">
+      <a href="../../../heap-priority-queue/kth-largest-element-in-an-array/" class="md-nav__link">
         
   
   
@@ -1847,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../heap-priority-queue/top-k-frequent-elements/" class="md-nav__link">
+      <a href="../../../heap-priority-queue/top-k-frequent-elements/" class="md-nav__link">
         
   
   
@@ -1929,7 +1828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../system-design/" class="md-nav__link">
+      <a href="../../../system-design/" class="md-nav__link">
         
   
   
@@ -1957,7 +1856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../system-design/high-level-overview/" class="md-nav__link">
+      <a href="../../../system-design/high-level-overview/" class="md-nav__link">
         
   
   
@@ -1989,18 +1888,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -2021,7 +1922,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2039,7 +1940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ds-and-algorithms-quest/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -2114,7 +2015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ds-and-algorithms-quest/array_1/concatenation-of-array/" class="md-nav__link">
+      <a href="../../array_1/concatenation-of-array/" class="md-nav__link">
         
   
   
@@ -2142,7 +2043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ds-and-algorithms-quest/array_1/shuffle-the-array/" class="md-nav__link">
+      <a href="../../array_1/shuffle-the-array/" class="md-nav__link">
         
   
   
@@ -2170,7 +2071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ds-and-algorithms-quest/array_1/max-consecutive-ones/" class="md-nav__link">
+      <a href="../../array_1/max-consecutive-ones/" class="md-nav__link">
         
   
   
@@ -2203,18 +2104,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" checked>
         
           
           <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
@@ -2235,7 +2138,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2253,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ds-and-algorithms-quest/array_2/set-mismatch/" class="md-nav__link">
+      <a href="../set-mismatch/" class="md-nav__link">
         
   
   
@@ -2281,7 +2184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ds-and-algorithms-quest/array_2/smaller-numbers-than-current/" class="md-nav__link">
+      <a href="../smaller-numbers-than-current/" class="md-nav__link">
         
   
   
@@ -2306,10 +2209,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../ds-and-algorithms-quest/array_2/find-disappeared-numbers/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Find Disappeared Numbers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2325,6 +2255,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intuition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solutions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#find_disappeared_numbers_naive-naive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        find_disappeared_numbers_naive — Naive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find_disappeared_numbers_optimized-optimized" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        find_disappeared_numbers_optimized — Optimized
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2372,6 +2383,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#intuition" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2395,10 +2417,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#character_replacement_naive-naive" class="md-nav__link">
+  <a href="#find_disappeared_numbers_naive-naive" class="md-nav__link">
     <span class="md-ellipsis">
       
-        character_replacement_naive — Naive
+        find_disappeared_numbers_naive — Naive
       
     </span>
   </a>
@@ -2406,10 +2428,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#character_replacement_optimized-optimized" class="md-nav__link">
+  <a href="#find_disappeared_numbers_optimized-optimized" class="md-nav__link">
     <span class="md-ellipsis">
       
-        character_replacement_optimized — Optimized
+        find_disappeared_numbers_optimized — Optimized
       
     </span>
   </a>
@@ -2441,49 +2463,36 @@
   
 
 
-<h1 id="longest-repeating-character-replacement">Longest Repeating Character Replacement<a class="headerlink" href="#longest-repeating-character-replacement" title="Permanent link">&para;</a></h1>
-<p><strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-repeating-character-replacement/">https://leetcode.com/problems/longest-repeating-character-replacement/</a></p>
-<p><strong>AlgoMaster Animation:</strong> <a href="https://algomaster.io/animations/dsa/longest-repeating-character-replacement">https://algomaster.io/animations/dsa/longest-repeating-character-replacement</a></p>
+<h1 id="q3-find-all-numbers-disappeared-in-an-array">Q3. Find All Numbers Disappeared in an Array<a class="headerlink" href="#q3-find-all-numbers-disappeared-in-an-array" title="Permanent link">&para;</a></h1>
+<p><strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/">448</a></p>
+<p><strong>AlgoMaster Animation:</strong> <a href="https://algomaster.io/animations/dsa/find-all-numbers-disappeared-in-an-array">https://algomaster.io/animations/dsa/find-all-numbers-disappeared-in-an-array</a></p>
+<h2 id="pattern">Pattern<a class="headerlink" href="#pattern" title="Permanent link">&para;</a></h2>
+<p><strong>Hashmaps / Hash sets</strong> — The naive solution explicitly uses a set to track present numbers. The optimized solution uses the array itself as a hash set: by negating <code>nums[value - 1]</code>, we mark that value as "seen" without allocating extra space. This maps to the "have I seen this before?" check from the hashmap pattern, but implemented in-place.</p>
 <h2 id="intuition">Intuition<a class="headerlink" href="#intuition" title="Permanent link">&para;</a></h2>
-<p>Intuition: Variable-size sliding window. The window is valid if
-(window length - max frequency of any char) &lt;= k. Expand right, and if the
-window becomes invalid, shrink left. The key insight: we only need to track
-the max frequency — if it wasn't the bottleneck before, it won't help now.</p>
+<p>Values are in [1, n] but some are missing. The naive approach uses a hash set of present values. The optimized approach marks visited indices in-place by negating the value at the corresponding index. After processing, indices with positive values are the missing numbers — O(1) extra space.</p>
 <h2 id="solutions">Solutions<a class="headerlink" href="#solutions" title="Permanent link">&para;</a></h2>
-<h3 id="character_replacement_naive-naive"><code>character_replacement_naive</code> — Naive<a class="headerlink" href="#character_replacement_naive-naive" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">character_replacement_naive</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c1"># Time: O(n^3) — nested loops with inner frequency rebuild</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="c1"># Space: O(1) — frequency dict bounded by alphabet size (26)</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">max_len</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            <span class="n">freq</span> <span class="o">=</span> <span class="p">{}</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                <span class="n">freq</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">m</span><span class="p">]]</span> <span class="o">=</span> <span class="n">freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">m</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            <span class="n">max_freq</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">freq</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="k">if</span> <span class="n">freq</span> <span class="k">else</span> <span class="mi">0</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="n">window_len</span> <span class="o">=</span> <span class="n">j</span> <span class="o">-</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            <span class="k">if</span> <span class="n">window_len</span> <span class="o">-</span> <span class="n">max_freq</span> <span class="o">&lt;=</span> <span class="n">k</span><span class="p">:</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                <span class="n">max_len</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_len</span><span class="p">,</span> <span class="n">window_len</span><span class="p">)</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="k">return</span> <span class="n">max_len</span>
+<h3 id="find_disappeared_numbers_naive-naive"><code>find_disappeared_numbers_naive</code> — Naive<a class="headerlink" href="#find_disappeared_numbers_naive-naive" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">find_disappeared_numbers_naive</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">present</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">present</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="k">return</span> <span class="n">result</span>
 </code></pre></div>
-<h3 id="character_replacement_optimized-optimized"><code>character_replacement_optimized</code> — Optimized<a class="headerlink" href="#character_replacement_optimized-optimized" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">character_replacement_optimized</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="c1"># Time: O(n) — single pass sliding window, O(1) per step</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="c1"># Space: O(1) — frequency dict bounded by alphabet size (26)</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">freq</span> <span class="o">=</span> <span class="p">{}</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">max_freq</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">max_len</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="k">for</span> <span class="n">right</span><span class="p">,</span> <span class="n">ch</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        <span class="n">freq</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ch</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="n">max_freq</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_freq</span><span class="p">,</span> <span class="n">freq</span><span class="p">[</span><span class="n">ch</span><span class="p">])</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="n">window_len</span> <span class="o">=</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="k">if</span> <span class="n">window_len</span> <span class="o">-</span> <span class="n">max_freq</span> <span class="o">&gt;</span> <span class="n">k</span><span class="p">:</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>            <span class="n">freq</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]]</span> <span class="o">-=</span> <span class="mi">1</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>        <span class="n">max_len</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_len</span><span class="p">,</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="k">return</span> <span class="n">max_len</span>
+<h3 id="find_disappeared_numbers_optimized-optimized"><code>find_disappeared_numbers_optimized</code> — Optimized<a class="headerlink" href="#find_disappeared_numbers_optimized-optimized" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">find_disappeared_numbers_optimized</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="n">idx</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>            <span class="n">nums</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">nums</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="k">return</span> <span class="n">result</span>
 </code></pre></div>
 
 
@@ -2534,10 +2543,10 @@ the max frequency — if it wasn't the bottleneck before, it won't help now.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
