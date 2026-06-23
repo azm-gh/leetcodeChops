@@ -13,6 +13,8 @@ from typing import List
 
 
 def smaller_numbers_than_current_naive(nums: List[int]) -> List[int]:
+    # Time: O(n^2) — compare each pair
+    # Space: O(1) — result excluded
     n = len(nums)
     result = []
     for i in range(n):
@@ -25,6 +27,8 @@ def smaller_numbers_than_current_naive(nums: List[int]) -> List[int]:
 
 
 def smaller_numbers_than_current_optimized(nums: List[int]) -> List[int]:
+    # Time: O(n) — counting sort with prefix sum (range bounded at 100)
+    # Space: O(1) — fixed 101-size arrays
     freq = [0] * 101
     for num in nums:
         freq[num] += 1

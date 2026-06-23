@@ -12,6 +12,8 @@ from typing import List
 
 
 def find_max_consecutive_ones_naive(nums: List[int]) -> int:
+    # Time: O(n) — single scan with inner while for each run
+    # Space: O(1)
     n = len(nums)
     max_len = 0
     i = 0
@@ -28,6 +30,8 @@ def find_max_consecutive_ones_naive(nums: List[int]) -> int:
 
 
 def find_max_consecutive_ones_optimized(nums: List[int]) -> int:
+    # Time: O(n) — single pass, no inner loops
+    # Space: O(1)
     count = 0
     max_count = 0
     for num in nums:

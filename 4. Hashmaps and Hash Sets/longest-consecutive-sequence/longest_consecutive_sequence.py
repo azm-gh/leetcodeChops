@@ -12,6 +12,8 @@ from typing import List
 
 
 def longest_consecutive_naive(nums: List[int]) -> int:
+    # Time: O(n^2) worst — for each num, walk forward one at a time
+    # Space: O(n) — hash set
     if not nums:
         return 0
     nums_set = set(nums)
@@ -27,6 +29,8 @@ def longest_consecutive_naive(nums: List[int]) -> int:
 
 
 def longest_consecutive_optimized(nums: List[int]) -> int:
+    # Time: O(n) — each number visited only from the start of its sequence
+    # Space: O(n) — hash set
     nums_set = set(nums)
     longest = 0
     for num in nums_set:

@@ -14,12 +14,16 @@ import heapq
 
 
 def top_k_frequent_sort_naive(nums: List[int], k: int) -> List[int]:
+    # Time: O(n log n) — sort all unique elements by frequency
+    # Space: O(n) — frequency map
     freq = Counter(nums)
     sorted_items = sorted(freq.items(), key=lambda x: x[1], reverse=True)
     return [item[0] for item in sorted_items[:k]]
 
 
 def top_k_frequent_heap_optimized(nums: List[int], k: int) -> List[int]:
+    # Time: O(n log k) — min-heap of size k over unique elements
+    # Space: O(n) — frequency map + heap
     freq = Counter(nums)
     heap = []
     for num, count in freq.items():

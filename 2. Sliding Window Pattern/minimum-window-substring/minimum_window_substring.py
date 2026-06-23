@@ -12,6 +12,8 @@ from collections import Counter
 
 
 def min_window_naive(s: str, t: str) -> str:
+    # Time: O(n^2 * m) — check every substring, count chars in t each time
+    # Space: O(m) — target dict for t
     n = len(s)
     target = Counter(t)
     min_len = float("inf")
@@ -27,6 +29,8 @@ def min_window_naive(s: str, t: str) -> str:
 
 
 def min_window_optimized(s: str, t: str) -> str:
+    # Time: O(n) — sliding window, each char visited at most twice
+    # Space: O(m) — window and target dicts (m = size of t's distinct chars)
     if not s or not t:
         return ""
 

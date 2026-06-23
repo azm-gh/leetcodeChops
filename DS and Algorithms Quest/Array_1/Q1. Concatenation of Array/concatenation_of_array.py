@@ -13,6 +13,8 @@ from typing import List
 
 
 def get_concatenation_naive(nums: List[int]) -> List[int]:
+    # Time: O(n) — single pass filling result
+    # Space: O(n) — result array (2n)
     n = len(nums)
     ans = [0] * (2 * n)
     for i in range(n):
@@ -22,4 +24,6 @@ def get_concatenation_naive(nums: List[int]) -> List[int]:
 
 
 def get_concatenation_optimized(nums: List[int]) -> List[int]:
+    # Time: O(n) — list concatenation copies all elements
+    # Space: O(n) — result array (2n)
     return nums + nums

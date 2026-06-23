@@ -15,6 +15,8 @@ from typing import List
 
 
 def find_disappeared_numbers_naive(nums: List[int]) -> List[int]:
+    # Time: O(n) — set construction + range scan
+    # Space: O(n) — hash set
     n = len(nums)
     present = set(nums)
     result = []
@@ -25,6 +27,8 @@ def find_disappeared_numbers_naive(nums: List[int]) -> List[int]:
 
 
 def find_disappeared_numbers_optimized(nums: List[int]) -> List[int]:
+    # Time: O(n) — index marking + second pass
+    # Space: O(1) — input array reused as marker
     n = len(nums)
     for num in nums:
         idx = abs(num) - 1

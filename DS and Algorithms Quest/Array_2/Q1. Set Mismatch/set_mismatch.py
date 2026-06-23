@@ -13,6 +13,8 @@ from typing import List
 
 
 def find_error_nums_naive(nums: List[int]) -> List[int]:
+    # Time: O(n) — frequency array counting
+    # Space: O(n) — frequency array
     n = len(nums)
     freq = [0] * (n + 1)
     for num in nums:
@@ -27,6 +29,8 @@ def find_error_nums_naive(nums: List[int]) -> List[int]:
 
 
 def find_error_nums_optimized(nums: List[int]) -> List[int]:
+    # Time: O(n) — set construction + arithmetic
+    # Space: O(n) — set of nums
     n = len(nums)
     set_sum = sum(set(nums))
     actual_sum = sum(nums)

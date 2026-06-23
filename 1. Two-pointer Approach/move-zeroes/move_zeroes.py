@@ -12,6 +12,8 @@ from typing import List
 
 
 def move_zeroes_naive(nums: List[int]) -> List[int]:
+    # Time: O(n) — single pass, but uses extra array
+    # Space: O(n) — result array
     n = len(nums)
     result = [0] * n
     idx = 0
@@ -23,6 +25,8 @@ def move_zeroes_naive(nums: List[int]) -> List[int]:
 
 
 def move_zeroes_optimized(nums: List[int]) -> None:
+    # Time: O(n) — single pass, in-place swaps
+    # Space: O(1)
     n = len(nums)
     left = 0
     for right in range(n):

@@ -12,6 +12,8 @@ from typing import List
 
 
 def shuffle_naive(nums: List[int], n: int) -> List[int]:
+    # Time: O(n) — single pass, one append per element
+    # Space: O(n) — result array
     result = []
     for i in range(n):
         result.append(nums[i])
@@ -20,6 +22,8 @@ def shuffle_naive(nums: List[int], n: int) -> List[int]:
 
 
 def shuffle_optimized(nums: List[int], n: int) -> List[int]:
+    # Time: O(n) — single pass, direct index assignment
+    # Space: O(n) — pre-allocated result array
     result = [0] * (2 * n)
     for i in range(n):
         result[2 * i] = nums[i]

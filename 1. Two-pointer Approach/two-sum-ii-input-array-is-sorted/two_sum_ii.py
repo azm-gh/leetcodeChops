@@ -13,6 +13,8 @@ from typing import List
 
 
 def two_sum_naive(numbers: List[int], target: int) -> List[int]:
+    # Time: O(n^2) — check every pair
+    # Space: O(1)
     n = len(numbers)
     for i in range(n):
         for j in range(i + 1, n):
@@ -22,6 +24,8 @@ def two_sum_naive(numbers: List[int], target: int) -> List[int]:
 
 
 def two_sum_optimized(numbers: List[int], target: int) -> List[int]:
+    # Time: O(n) — two-pointer converges in one pass (array is sorted)
+    # Space: O(1)
     left, right = 0, len(numbers) - 1
     while left < right:
         curr = numbers[left] + numbers[right]

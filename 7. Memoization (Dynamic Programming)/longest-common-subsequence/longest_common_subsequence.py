@@ -10,6 +10,8 @@ https://leetcode.com/problems/longest-common-subsequence/
 
 
 def longest_common_subsequence_recursive_naive(text1: str, text2: str) -> int:
+    # Time: O(2^(n+m)) — two recursive branches with overlapping subproblems
+    # Space: O(n+m) — recursion stack depth
     def lcs(i, j):
         if i == len(text1) or j == len(text2):
             return 0
@@ -20,6 +22,8 @@ def longest_common_subsequence_recursive_naive(text1: str, text2: str) -> int:
 
 
 def longest_common_subsequence_dp_optimized(text1: str, text2: str) -> int:
+    # Time: O(m*n) — fill 2D DP table
+    # Space: O(m*n) — 2D DP table
     m, n = len(text1), len(text2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
     for i in range(1, m + 1):

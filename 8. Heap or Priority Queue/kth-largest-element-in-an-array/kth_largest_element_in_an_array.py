@@ -12,10 +12,14 @@ import heapq
 
 
 def find_kth_largest_sort_naive(nums: List[int], k: int) -> int:
+    # Time: O(n log n) — full sort
+    # Space: O(1) — sort in-place (TimSort uses O(n) in worst case)
     return sorted(nums, reverse=True)[k - 1]
 
 
 def find_kth_largest_heap_optimized(nums: List[int], k: int) -> int:
+    # Time: O(n log k) — min-heap of size k, single pass
+    # Space: O(k) — heap
     heap = nums[:k]
     heapq.heapify(heap)
     for num in nums[k:]:

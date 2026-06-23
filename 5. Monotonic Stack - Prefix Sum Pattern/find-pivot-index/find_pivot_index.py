@@ -11,6 +11,8 @@ from typing import List
 
 
 def pivot_index_naive(nums: List[int]) -> int:
+    # Time: O(n^2) — sum left/right O(n) for each index
+    # Space: O(1)
     n = len(nums)
     for i in range(n):
         left_sum = sum(nums[:i])
@@ -21,6 +23,8 @@ def pivot_index_naive(nums: List[int]) -> int:
 
 
 def pivot_index_optimized(nums: List[int]) -> int:
+    # Time: O(n) — single pass after computing total
+    # Space: O(1)
     total = sum(nums)
     left_sum = 0
     for i, num in enumerate(nums):

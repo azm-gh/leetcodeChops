@@ -13,6 +13,8 @@ from collections import deque
 
 
 def num_islands_dfs_naive(grid: List[List[str]]) -> int:
+    # Time: O(m*n) — each cell visited at most once
+    # Space: O(m*n) — recursion stack in worst case (all land)
     if not grid:
         return 0
 
@@ -35,6 +37,8 @@ def num_islands_dfs_naive(grid: List[List[str]]) -> int:
 
 
 def num_islands_bfs_optimized(grid: List[List[str]]) -> int:
+    # Time: O(m*n) — each cell visited at most once
+    # Space: O(min(m,n)) — queue holds at most the grid's diagonal
     if not grid:
         return 0
 

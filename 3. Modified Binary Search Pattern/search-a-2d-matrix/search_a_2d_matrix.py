@@ -12,6 +12,8 @@ from typing import List
 
 
 def search_matrix_naive(matrix: List[List[int]], target: int) -> bool:
+    # Time: O(m*n) — scan every element in the matrix
+    # Space: O(1)
     for row in matrix:
         for val in row:
             if val == target:
@@ -20,6 +22,8 @@ def search_matrix_naive(matrix: List[List[int]], target: int) -> bool:
 
 
 def search_matrix_optimized(matrix: List[List[int]], target: int) -> bool:
+    # Time: O(log(m*n)) — binary search on flattened matrix
+    # Space: O(1)
     if not matrix or not matrix[0]:
         return False
     m, n = len(matrix), len(matrix[0])
