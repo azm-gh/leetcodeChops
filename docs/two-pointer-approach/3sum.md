@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/3sum/](https://leetcode.com/problems/3sum/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/3Sum](https://algomaster.io/animations/dsa/3Sum)
+
 ## Intuition
 
 Intuition: Two-pointer after sorting. We fix one element (i) then use the

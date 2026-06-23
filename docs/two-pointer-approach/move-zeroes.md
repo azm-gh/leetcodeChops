@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/move-zeroes/](https://leetcode.com/problems/move-zeroes/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/move-zeroes](https://algomaster.io/animations/dsa/move-zeroes)
+
 ## Intuition
 
 Intuition: Two-pointer is ideal here because we need to rearrange elements

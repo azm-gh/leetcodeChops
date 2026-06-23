@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/range-sum-query-immutable/](https://leetcode.com/problems/range-sum-query-immutable/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/range-sum-query-immutable](https://algomaster.io/animations/dsa/range-sum-query-immutable)
+
 ## Intuition
 
 Intuition: Prefix sum array for O(1) range sum queries. Precompute

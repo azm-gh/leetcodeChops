@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/maximum-average-subarray-i/](https://leetcode.com/problems/maximum-average-subarray-i/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/maximum-average-subarray-i](https://algomaster.io/animations/dsa/maximum-average-subarray-i)
+
 ## Intuition
 
 Intuition: Fixed-size sliding window. Since k is constant, we slide a window

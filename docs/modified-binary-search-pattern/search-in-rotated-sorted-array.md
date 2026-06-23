@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/search-in-rotated-sorted-array/](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/search-in-rotated-sorted-array](https://algomaster.io/animations/dsa/search-in-rotated-sorted-array)
+
 ## Intuition
 
 Intuition: Modified binary search for a rotated sorted array. Even though the

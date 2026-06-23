@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/longest-common-subsequence/](https://leetcode.com/problems/longest-common-subsequence/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/longest-common-subsequence](https://algomaster.io/animations/dsa/longest-common-subsequence)
+
 ## Intuition
 
 Intuition: DP on two sequences. If chars match, LCS extends by 1:

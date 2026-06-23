@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/longest-consecutive-sequence/](https://leetcode.com/problems/longest-consecutive-sequence/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/longest-consecutive-sequence](https://algomaster.io/animations/dsa/longest-consecutive-sequence)
+
 ## Intuition
 
 Intuition: Use a hash set for O(1) lookups. A number is the start of a

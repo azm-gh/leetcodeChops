@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/climbing-stairs/](https://leetcode.com/problems/climbing-stairs/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/climbing-stairs](https://algomaster.io/animations/dsa/climbing-stairs)
+
 ## Intuition
 
 Intuition: Classic DP — Fibonacci pattern. To reach step n, you can come from

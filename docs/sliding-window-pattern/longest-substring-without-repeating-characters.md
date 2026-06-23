@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/longest-substring-without-repeating-characters](https://algomaster.io/animations/dsa/longest-substring-without-repeating-characters)
+
 ## Intuition
 
 Intuition: Variable-size sliding window. Expand right pointer to add new

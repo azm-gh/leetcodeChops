@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/word-ladder/](https://leetcode.com/problems/word-ladder/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/word-ladder](https://algomaster.io/animations/dsa/word-ladder)
+
 ## Intuition
 
 Intuition: Shortest path in an unweighted graph = BFS. Each word is a node,

@@ -52,6 +52,39 @@ PROBLEM_TITLES = {
     "top-k-frequent-elements": "Top K Frequent Elements",
 }
 
+# Map: problem subfolder -> AlgoMaster Animation URL (empty if not available)
+ALGOMASTER_URLS = {
+    "move-zeroes": "https://algomaster.io/animations/dsa/move-zeroes",
+    "two-sum-ii-input-array-is-sorted": "https://algomaster.io/animations/dsa/two-sum-ii-input-array-is-sorted",
+    "3sum": "https://algomaster.io/animations/dsa/3Sum",
+    "container-with-most-water": "https://algomaster.io/animations/dsa/container-with-most-water",
+    "maximum-average-subarray-i": "https://algomaster.io/animations/dsa/maximum-average-subarray-i",
+    "longest-substring-without-repeating-characters": "https://algomaster.io/animations/dsa/longest-substring-without-repeating-characters",
+    "longest-repeating-character-replacement": "https://algomaster.io/animations/dsa/longest-repeating-character-replacement",
+    "minimum-window-substring": "https://algomaster.io/animations/dsa/minimum-window-substring",
+    "search-in-rotated-sorted-array": "https://algomaster.io/animations/dsa/search-in-rotated-sorted-array",
+    "koko-eating-bananas": "https://algomaster.io/animations/dsa/koko-eating-bananas",
+    "search-a-2d-matrix": "https://algomaster.io/animations/dsa/search-a-2d-matrix",
+    "capacity-to-ship-packages-within-d-days": "https://algomaster.io/animations/dsa/capacity-to-ship-packages-within-d-days",
+    "find-the-duplicate-number": "https://algomaster.io/animations/dsa/find-the-duplicate-number",
+    "two-sum": "https://algomaster.io/animations/dsa/two-sum",
+    "majority-element": "https://algomaster.io/animations/dsa/majority-element",
+    "group-anagrams": "https://algomaster.io/animations/dsa/group-anagrams",
+    "longest-consecutive-sequence": "https://algomaster.io/animations/dsa/longest-consecutive-sequence",
+    "find-pivot-index": "https://algomaster.io/animations/dsa/find-pivot-index",
+    "subarray-sum-equals-k": "https://algomaster.io/animations/dsa/subarray-sum-equals-k",
+    "range-sum-query": "https://algomaster.io/animations/dsa/range-sum-query-immutable",
+    "number-of-islands": "https://algomaster.io/animations/dsa/number-of-islands",
+    "word-ladder": "https://algomaster.io/animations/dsa/word-ladder",
+    "climbing-stairs": "https://algomaster.io/animations/dsa/climbing-stairs",
+    "coin-change": "https://algomaster.io/animations/dsa/coin-change",
+    "longest-common-subsequence": "https://algomaster.io/animations/dsa/longest-common-subsequence",
+    "house-robber": "https://algomaster.io/animations/dsa/house-robber",
+    "last-stone-weight": "https://algomaster.io/animations/dsa/last-stone-weight",
+    "kth-largest-element-in-an-array": "https://algomaster.io/animations/dsa/kth-largest-element-in-an-array",
+    "top-k-frequent-elements": "https://algomaster.io/animations/dsa/top-k-frequent-elements",
+}
+
 # Map: problem subfolder -> LeetCode URL
 LEETCODE_URLS = {
     "move-zeroes": "https://leetcode.com/problems/move-zeroes/",
@@ -151,7 +184,7 @@ def extract_code_blocks(filepath):
     return [b.strip() for b in blocks]
 
 
-def generate_problem_page(pattern_name, problem_folder, problem_title, leetcode_url):
+def generate_problem_page(pattern_name, problem_folder, problem_title, leetcode_url, algomaster_url=""):
     """Generate a markdown page for a problem."""
     # Find the python file
     pattern_path = os.path.join(BASE, pattern_name)
@@ -171,6 +204,8 @@ def generate_problem_page(pattern_name, problem_folder, problem_title, leetcode_
     # Build the markdown
     lines = [f"# {problem_title}", ""]
     lines.append(f"**LeetCode:** [{leetcode_url}]({leetcode_url})")
+    if algomaster_url:
+        lines.append(f"**AlgoMaster Animation:** [{algomaster_url}]({algomaster_url})")
     lines.append("")
     
     if intuition:
@@ -243,7 +278,8 @@ def main():
             if prob_folder in PROBLEM_TITLES:
                 title = PROBLEM_TITLES[prob_folder]
                 url = LEETCODE_URLS.get(prob_folder, "")
-                page = generate_problem_page(pattern_name, prob_folder, title, url)
+                algo_url = ALGOMASTER_URLS.get(prob_folder, "")
+                page = generate_problem_page(pattern_name, prob_folder, title, url, algo_url)
                 if page:
                     doc_file = os.path.join(doc_path, f"{prob_folder}.md")
                     with open(doc_file, "w", encoding="utf-8") as f:

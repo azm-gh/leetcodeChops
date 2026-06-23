@@ -1,7 +1,7 @@
 site_name: LeetCode Chops
 site_description: LeetCode problem solutions organized by pattern — naive + optimized
-site_url: https://yourusername.github.io/leetcodeChops
-repo_url: https://github.com/yourusername/leetcodeChops
+site_url: https://azm-gh.github.io/leetcodeChops
+repo_url: https://github.com/azm-gh/leetcodeChops
 theme:
   name: material
   palette:

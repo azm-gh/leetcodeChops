@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/longest-repeating-character-replacement/](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/longest-repeating-character-replacement](https://algomaster.io/animations/dsa/longest-repeating-character-replacement)
+
 ## Intuition
 
 Intuition: Variable-size sliding window. The window is valid if

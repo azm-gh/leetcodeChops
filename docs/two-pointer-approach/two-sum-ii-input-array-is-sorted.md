@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/two-sum-ii-input-array-is-sorted](https://algomaster.io/animations/dsa/two-sum-ii-input-array-is-sorted)
+
 ## Intuition
 
 Intuition: Two-pointer works because the array is sorted. Starting with one

@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/minimum-window-substring/](https://leetcode.com/problems/minimum-window-substring/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/minimum-window-substring](https://algomaster.io/animations/dsa/minimum-window-substring)
+
 ## Intuition
 
 Intuition: Variable-size sliding window with two maps. Expand right until

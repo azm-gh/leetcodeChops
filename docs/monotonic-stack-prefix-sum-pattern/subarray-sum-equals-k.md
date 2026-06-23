@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/subarray-sum-equals-k/](https://leetcode.com/problems/subarray-sum-equals-k/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/subarray-sum-equals-k](https://algomaster.io/animations/dsa/subarray-sum-equals-k)
+
 ## Intuition
 
 Intuition: Prefix sum with hashmap. A subarray sum equals k when

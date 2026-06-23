@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/search-a-2d-matrix/](https://leetcode.com/problems/search-a-2d-matrix/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/search-a-2d-matrix](https://algomaster.io/animations/dsa/search-a-2d-matrix)
+
 ## Intuition
 
 Intuition: Binary search on a 2D matrix treated as flattened sorted 1D array.

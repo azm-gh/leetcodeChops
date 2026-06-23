@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/number-of-islands/](https://leetcode.com/problems/number-of-islands/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/number-of-islands](https://algomaster.io/animations/dsa/number-of-islands)
+
 ## Intuition
 
 Intuition: Grid traversal problem — each '1' is a node in a graph (4-dir

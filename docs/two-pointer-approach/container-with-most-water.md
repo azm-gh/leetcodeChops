@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/container-with-most-water/](https://leetcode.com/problems/container-with-most-water/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/container-with-most-water](https://algomaster.io/animations/dsa/container-with-most-water)
+
 ## Intuition
 
 Intuition: Two-pointer from both ends works because area is limited by the

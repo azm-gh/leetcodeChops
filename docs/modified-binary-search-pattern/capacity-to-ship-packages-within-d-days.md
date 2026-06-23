@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/capacity-to-ship-packages-within-d-days](https://algomaster.io/animations/dsa/capacity-to-ship-packages-within-d-days)
+
 ## Intuition
 
 Intuition: Binary search on answer. The capacity must be at least the heaviest

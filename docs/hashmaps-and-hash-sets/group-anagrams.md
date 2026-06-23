@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/group-anagrams/](https://leetcode.com/problems/group-anagrams/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/group-anagrams](https://algomaster.io/animations/dsa/group-anagrams)
+
 ## Intuition
 
 Intuition: Anagrams have identical sorted character sequences. Use the sorted

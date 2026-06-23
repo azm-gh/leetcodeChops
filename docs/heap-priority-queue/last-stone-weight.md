@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/last-stone-weight/](https://leetcode.com/problems/last-stone-weight/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/last-stone-weight](https://algomaster.io/animations/dsa/last-stone-weight)
+
 ## Intuition
 
 Intuition: Max heap — always smash the two heaviest stones. Python's heapq

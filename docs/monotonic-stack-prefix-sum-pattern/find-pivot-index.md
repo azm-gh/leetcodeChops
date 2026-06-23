@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/find-pivot-index/](https://leetcode.com/problems/find-pivot-index/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/find-pivot-index](https://algomaster.io/animations/dsa/find-pivot-index)
+
 ## Intuition
 
 Intuition: Prefix sum. Compute total sum, then iterate left to right tracking

@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/two-sum](https://algomaster.io/animations/dsa/two-sum)
+
 ## Intuition
 
 Intuition: As we iterate, store each number's index in a hashmap. For each

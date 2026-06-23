@@ -2,6 +2,8 @@
 
 **LeetCode:** [https://leetcode.com/problems/house-robber/](https://leetcode.com/problems/house-robber/)
 
+**AlgoMaster Animation:** [https://algomaster.io/animations/dsa/house-robber](https://algomaster.io/animations/dsa/house-robber)
+
 ## Intuition
 
 Intuition: DP — at each house, decide to rob or skip. If you rob, add
