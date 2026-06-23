@@ -15,6 +15,8 @@ no cycle. Both are valid for topological ordering problems.
 
 ```python
 def can_finish_dfs_naive(num_courses: int, prerequisites: List[List[int]]) -> bool:
+    # Time: O(V+E) — DFS visits each node and edge once
+    # Space: O(V+E) — adjacency list + recursion stack up to V
     graph = [[] for _ in range(num_courses)]
     for course, prereq in prerequisites:
         graph[prereq].append(course)
@@ -43,6 +45,8 @@ def can_finish_dfs_naive(num_courses: int, prerequisites: List[List[int]]) -> bo
 
 ```python
 def can_finish_bfs_optimized(num_courses: int, prerequisites: List[List[int]]) -> bool:
+    # Time: O(V+E) — Kahn's algorithm processes each node and edge once
+    # Space: O(V+E) — adjacency list + indegree array + queue
     graph = [[] for _ in range(num_courses)]
     indegree = [0] * num_courses
     for course, prereq in prerequisites:

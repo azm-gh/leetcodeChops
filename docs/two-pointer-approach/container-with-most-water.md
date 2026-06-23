@@ -17,6 +17,8 @@ because that would only decrease width without potential height gain.
 
 ```python
 def max_area_naive(height: List[int]) -> int:
+    # Time: O(n^2) — check every pair of lines
+    # Space: O(1)
     n = len(height)
     max_water = 0
     for i in range(n):
@@ -30,6 +32,8 @@ def max_area_naive(height: List[int]) -> int:
 
 ```python
 def max_area_optimized(height: List[int]) -> int:
+    # Time: O(n) — single pass from both ends
+    # Space: O(1)
     left, right = 0, len(height) - 1
     max_water = 0
     while left < right:

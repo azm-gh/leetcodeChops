@@ -20,6 +20,7 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+  - md_in_html
   - toc:
       permalink: true
 nav:
@@ -71,3 +72,16 @@ nav:
     - Last Stone Weight: heap-priority-queue/last-stone-weight.md
     - Kth Largest Element: heap-priority-queue/kth-largest-element-in-an-array.md
     - Top K Frequent Elements: heap-priority-queue/top-k-frequent-elements.md
+  - System Design:
+    - Overview: system-design/index.md
+    - High Level Overview: system-design/high-level-overview.md
+  - DS and Algorithms Quest:
+    - Overview: ds-and-algorithms-quest/index.md
+    - Array 1:
+      - Concatenation of Array: ds-and-algorithms-quest/array_1/concatenation-of-array.md
+      - Shuffle the Array: ds-and-algorithms-quest/array_1/shuffle-the-array.md
+      - Max Consecutive Ones: ds-and-algorithms-quest/array_1/max-consecutive-ones.md
+    - Array 2:
+      - Set Mismatch: ds-and-algorithms-quest/array_2/set-mismatch.md
+      - Smaller Numbers Than Current: ds-and-algorithms-quest/array_2/smaller-numbers-than-current.md
+      - Find Disappeared Numbers: ds-and-algorithms-quest/array_2/find-disappeared-numbers.md

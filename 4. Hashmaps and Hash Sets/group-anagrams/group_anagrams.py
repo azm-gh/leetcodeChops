@@ -11,6 +11,8 @@ from typing import List
 
 
 def group_anagrams_naive(strs: List[str]) -> List[List[str]]:
+    # Time: O(n^2 * k log k) — compare each pair with sorted keys (k = avg string len)
+    # Space: O(n) — visited array + result
     n = len(strs)
     visited = [False] * n
     result = []
@@ -28,6 +30,8 @@ def group_anagrams_naive(strs: List[str]) -> List[List[str]]:
 
 
 def group_anagrams_optimized(strs: List[str]) -> List[List[str]]:
+    # Time: O(n * k log k) — hashmap insertion with sorted key per string
+    # Space: O(n * k) — hashmap stores all strings grouped by key
     groups = {}
     for s in strs:
         key = tuple(sorted(s))

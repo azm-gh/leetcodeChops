@@ -12,6 +12,8 @@ from typing import List
 
 
 def find_max_average_naive(nums: List[int], k: int) -> float:
+    # Time: O(n*k) — recompute sum for each window start
+    # Space: O(1)
     n = len(nums)
     max_avg = float("-inf")
     for i in range(n - k + 1):
@@ -23,6 +25,8 @@ def find_max_average_naive(nums: List[int], k: int) -> float:
 
 
 def find_max_average_optimized(nums: List[int], k: int) -> float:
+    # Time: O(n) — sliding window O(1) per step after initial sum
+    # Space: O(1)
     n = len(nums)
     window_sum = sum(nums[:k])
     max_sum = window_sum

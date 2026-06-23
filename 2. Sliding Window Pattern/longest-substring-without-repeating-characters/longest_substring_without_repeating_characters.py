@@ -11,6 +11,8 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 
 def length_of_longest_substring_naive(s: str) -> int:
+    # Time: O(n^2) — check every substring from each start
+    # Space: O(min(n, m)) — set stores window chars (m = alphabet size)
     n = len(s)
     max_len = 0
     for i in range(n):
@@ -24,6 +26,8 @@ def length_of_longest_substring_naive(s: str) -> int:
 
 
 def length_of_longest_substring_optimized(s: str) -> int:
+    # Time: O(n) — each char visited once by left/right pointers
+    # Space: O(min(n, m)) — dict stores last index of each char (m = alphabet size)
     char_index = {}
     left = 0
     max_len = 0

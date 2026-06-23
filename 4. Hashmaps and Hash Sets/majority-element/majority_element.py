@@ -12,6 +12,8 @@ from collections import Counter
 
 
 def majority_element_naive(nums: List[int]) -> int:
+    # Time: O(n) — hashmap frequency count
+    # Space: O(n) — frequency map
     freq = Counter(nums)
     n = len(nums)
     for num, count in freq.items():
@@ -21,6 +23,8 @@ def majority_element_naive(nums: List[int]) -> int:
 
 
 def majority_element_optimized(nums: List[int]) -> int:
+    # Time: O(n) — Boyer-Moore, single pass with cancelation
+    # Space: O(1)
     candidate = None
     count = 0
     for num in nums:

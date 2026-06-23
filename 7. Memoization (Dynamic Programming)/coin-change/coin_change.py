@@ -11,6 +11,8 @@ from typing import List
 
 
 def coin_change_recursive_naive(coins: List[int], amount: int) -> int:
+    # Time: O(n^amount) — exponential branching over coin choices
+    # Space: O(amount) — recursion stack depth
     if amount < 0:
         return -1
     if amount == 0:
@@ -24,6 +26,8 @@ def coin_change_recursive_naive(coins: List[int], amount: int) -> int:
 
 
 def coin_change_dp_optimized(coins: List[int], amount: int) -> int:
+    # Time: O(n * amount) — nested loop over coins and sub-amounts
+    # Space: O(amount) — DP table
     dp = [float("inf")] * (amount + 1)
     dp[0] = 0
     for i in range(1, amount + 1):

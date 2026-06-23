@@ -17,6 +17,8 @@ branching factor from O(26^L) to ~O(2 * 26^(L/2)).
 
 ```python
 def ladder_length_bfs_naive(begin_word: str, end_word: str, word_list: List[str]) -> int:
+    # Time: O(n * L * 26) — BFS explores up to n nodes, each generates 26*L neighbors
+    # Space: O(n) — word set + queue
     word_set = set(word_list)
     if end_word not in word_set:
         return 0
@@ -39,6 +41,8 @@ def ladder_length_bfs_naive(begin_word: str, end_word: str, word_list: List[str]
 
 ```python
 def ladder_length_bidirectional_optimized(begin_word: str, end_word: str, word_list: List[str]) -> int:
+    # Time: O(n * L * 26) — bidirectional halves search depth
+    # Space: O(n) — two frontier sets + word set
     word_set = set(word_list)
     if end_word not in word_set:
         return 0

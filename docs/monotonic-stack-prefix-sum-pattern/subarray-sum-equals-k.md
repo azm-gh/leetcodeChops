@@ -17,6 +17,8 @@ before; the count of such occurrences is the number of subarrays ending here.
 
 ```python
 def subarray_sum_naive(nums: List[int], k: int) -> int:
+    # Time: O(n^2) — enumerate all subarrays
+    # Space: O(1)
     n = len(nums)
     count = 0
     for i in range(n):
@@ -32,6 +34,8 @@ def subarray_sum_naive(nums: List[int], k: int) -> int:
 
 ```python
 def subarray_sum_optimized(nums: List[int], k: int) -> int:
+    # Time: O(n) — hashmap of prefix sums for O(1) lookup
+    # Space: O(n) — hashmap stores prefix frequency
     prefix_sum = {0: 1}
     total = 0
     count = 0

@@ -17,6 +17,8 @@ tradeoff: O(n) precomputation for O(1) queries.
 
 ```python
 class NumArrayNaive:
+    # Time: O(n) per query — slice sum from scratch
+    # Space: O(n) — stores the original array
     def __init__(self, nums: List[int]):
         self.nums = nums
 
@@ -28,6 +30,8 @@ class NumArrayNaive:
 
 ```python
 class NumArrayOptimized:
+    # Time: O(1) per query — prefix diff gives range sum instantly
+    # Space: O(n) — prefix array
     def __init__(self, nums: List[int]):
         self.prefix = [0] * (len(nums) + 1)
         for i, num in enumerate(nums):
