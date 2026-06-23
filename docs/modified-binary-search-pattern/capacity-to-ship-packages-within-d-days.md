@@ -15,6 +15,8 @@ If within D days, try lower capacity; otherwise increase.
 
 ```python
 def ship_within_days_naive(weights: List[int], days: int) -> int:
+    # Time: O(n * range) — linear scan for each candidate capacity
+    # Space: O(1)
     left, right = max(weights), sum(weights)
     for cap in range(left, right + 1):
         total = 0
@@ -34,6 +36,8 @@ def ship_within_days_naive(weights: List[int], days: int) -> int:
 
 ```python
 def ship_within_days_optimized(weights: List[int], days: int) -> int:
+    # Time: O(n log range) — binary search + O(n) feasibility check per mid
+    # Space: O(1)
     left, right = max(weights), sum(weights)
     while left < right:
         mid = (left + right) // 2

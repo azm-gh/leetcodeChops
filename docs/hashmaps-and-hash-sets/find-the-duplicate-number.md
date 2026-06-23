@@ -15,6 +15,8 @@ which is the duplicate value. O(n) time, O(1) space — no extra hashmap needed.
 
 ```python
 def find_duplicate_naive(nums: List[int]) -> int:
+    # Time: O(n) — single pass with hash set lookups
+    # Space: O(n) — set stores up to n elements
     seen = set()
     for num in nums:
         if num in seen:
@@ -27,6 +29,8 @@ def find_duplicate_naive(nums: List[int]) -> int:
 
 ```python
 def find_duplicate_optimized(nums: List[int]) -> int:
+    # Time: O(n) — Floyd's cycle detection, at most 2n steps
+    # Space: O(1)
     slow = nums[0]
     fast = nums[0]
     while True:

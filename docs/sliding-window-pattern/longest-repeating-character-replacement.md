@@ -15,6 +15,8 @@ the max frequency — if it wasn't the bottleneck before, it won't help now.
 
 ```python
 def character_replacement_naive(s: str, k: int) -> int:
+    # Time: O(n^3) — nested loops with inner frequency rebuild
+    # Space: O(1) — frequency dict bounded by alphabet size (26)
     n = len(s)
     max_len = 0
     for i in range(n):
@@ -33,6 +35,8 @@ def character_replacement_naive(s: str, k: int) -> int:
 
 ```python
 def character_replacement_optimized(s: str, k: int) -> int:
+    # Time: O(n) — single pass sliding window, O(1) per step
+    # Space: O(1) — frequency dict bounded by alphabet size (26)
     freq = {}
     left = 0
     max_freq = 0

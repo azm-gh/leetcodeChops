@@ -14,6 +14,8 @@ two largest, smash them, and push back if any weight remains. O(n log n).
 
 ```python
 def last_stone_weight_sort_naive(stones: List[int]) -> int:
+    # Time: O(n^2 log n) — sort each iteration (n times)
+    # Space: O(n) — copy of array
     stones = stones[:]
     while len(stones) > 1:
         stones.sort()
@@ -28,6 +30,8 @@ def last_stone_weight_sort_naive(stones: List[int]) -> int:
 
 ```python
 def last_stone_weight_heap_optimized(stones: List[int]) -> int:
+    # Time: O(n log n) — heap operations, each pop/push is O(log n)
+    # Space: O(n) — heap stores all stones
     heap = [-s for s in stones]
     heapq.heapify(heap)
     while len(heap) > 1:

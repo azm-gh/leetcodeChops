@@ -15,6 +15,8 @@ endpoints, and search accordingly. This preserves O(log n) time.
 
 ```python
 def search_naive(nums: List[int], target: int) -> int:
+    # Time: O(n) — linear scan
+    # Space: O(1)
     for i, num in enumerate(nums):
         if num == target:
             return i
@@ -25,6 +27,8 @@ def search_naive(nums: List[int], target: int) -> int:
 
 ```python
 def search_optimized(nums: List[int], target: int) -> int:
+    # Time: O(log n) — binary search with rotated half detection
+    # Space: O(1)
     left, right = 0, len(nums) - 1
     while left <= right:
         mid = (left + right) // 2

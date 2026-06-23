@@ -15,6 +15,8 @@ two-pointer convergence pattern.
 
 ```python
 def three_sum_naive(nums: List[int]) -> List[List[int]]:
+    # Time: O(n^3) — triple nested loop over all triplets
+    # Space: O(n) — set stores up to n unique triplets
     n = len(nums)
     result = set()
     for i in range(n):
@@ -30,6 +32,8 @@ def three_sum_naive(nums: List[int]) -> List[List[int]]:
 
 ```python
 def three_sum_optimized(nums: List[int]) -> List[List[int]]:
+    # Time: O(n^2) — two-pointer scan for each fixed element after O(n log n) sort
+    # Space: O(1) — result excluded; sorting may use O(log n) stack
     nums.sort()
     n = len(nums)
     result = []

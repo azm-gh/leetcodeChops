@@ -25,6 +25,8 @@ class TreeNode:
 
 ```python
 def max_depth_dfs_naive(root: TreeNode) -> int:
+    # Time: O(n) — visit every node once
+    # Space: O(h) — recursion stack, h = height of tree
     if not root:
         return 0
     return 1 + max(max_depth_dfs_naive(root.left), max_depth_dfs_naive(root.right))
@@ -34,6 +36,8 @@ def max_depth_dfs_naive(root: TreeNode) -> int:
 
 ```python
 def max_depth_bfs_optimized(root: TreeNode) -> int:
+    # Time: O(n) — visit every node once
+    # Space: O(w) — queue holds at most the width of the tree
     if not root:
         return 0
     q = deque([root])

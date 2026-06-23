@@ -14,6 +14,8 @@ Bottom-up DP avoids repeated subproblem computation, reducing from O(2^n) to O(n
 
 ```python
 def climb_stairs_recursive_naive(n: int) -> int:
+    # Time: O(2^n) — two recursive branches per call, exponential
+    # Space: O(n) — recursion stack depth
     if n <= 2:
         return n
     return climb_stairs_recursive_naive(n - 1) + climb_stairs_recursive_naive(n - 2)
@@ -23,6 +25,8 @@ def climb_stairs_recursive_naive(n: int) -> int:
 
 ```python
 def climb_stairs_dp_optimized(n: int) -> int:
+    # Time: O(n) — single loop, bottom-up Fibonacci
+    # Space: O(1)
     if n <= 2:
         return n
     prev, curr = 1, 2
